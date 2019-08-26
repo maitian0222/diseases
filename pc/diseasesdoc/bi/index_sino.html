@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="description" content="普外科的疾病列表，用于检索该疾病相关的医生">
+
+    
+	<meta name="keywords" content="普外科，疾病，按疾病找医生" />
+	
+
+
+    <title>普外科疾病-春雨医生</title>
+
+    
+    <link rel="shortcut icon" href="https://resource.chunyu.mobi/@/static/favicon.ico"/>
+    
+
+    <!--fis编译该 html 后自动引入的 css 放置位置-->
+        
+
+    
+	    <link rel="stylesheet" href="//static.chunyuyisheng.com/@/static/pc/pkg/seo/layout/base_aio_72e15e5.css" />
+
+    
+    <link rel="stylesheet" href="//static.chunyuyisheng.com/@/static/pc/css/seo/search_by_disease_89443ca.css" />
+
+    
+    <script type="text/javascript" src="//static.chunyuyisheng.com/@/static/pc/js/libs/tingyun_8cfb8ae.js"></script>
+    
+
+    <!--项目公共head js放置区域-->
+</head>
+<body>
+
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="//static.chunyuyisheng.com/@/static/pc/css/seo/ie_pollify_2c51446.css"/>
+	<![endif]-->
+	 <div class="header-top-wrap">
+  <div class="ui-grid header-top">
+    <ul class="quick-menu">
+      <li class="menu-item menu-dropdown">
+        <a href="javascript:void(0)">用户端App</a>
+        <div class="qr-code-wrap">
+          <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/qrcode_2a59fce.png" alt="春雨医生二维码">
+          <div class="content">
+            <span class="tit">春雨医生App</span>
+            <span class="sub-tit">扫描二维码</span>
+            <span class="sub-tit">安装春雨医生App</span>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-dropdown">
+        <a href="javascript:void(0)">医生端App</a>
+        <div class="qr-code-wrap">
+          <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/ysd_fa652b7.png" alt="春雨诊所二维码">
+          <div class="content">
+            <span class="tit">春雨诊所App</span>
+            <span class="sub-tit">扫描二维码</span>
+            <span class="sub-tit">安装春雨诊所App</span>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-dropdown weixin-dropdown">
+        <a href="javascript:void(0)">微信公众号</a>
+        <div class="qr-code-wrap">
+          <div class="qr-item">
+            <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/fwh_d0a0f86.png" alt="微信公众号二维码">
+            <div class="content">
+              <span class="tit">微信公众号</span>
+              <span class="sub-tit">扫描二维码</span>
+              <span class="sub-tit">关注春雨医生公众号</span>
+            </div>
+          </div>
+          <div class="qr-item qr-item-last">
+            <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/xcx_d1dc5fc.png" alt="春雨医生小程序二维码">
+            <div class="content">
+              <span class="tit">小程序 春雨医生+</span>
+              <span class="sub-tit">扫描二维码</span>
+              <span class="sub-tit">无需下载快速问诊</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-dropdown">
+        <a href="javascript:void(0)">企业版</a>
+        <div class="qr-code-wrap">
+          <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/sm_app_b1edec3.png" alt="春雨医生企业版小程序码">
+          <div class="content">
+            <span class="tit">小程序 企业版</span>
+            <span class="sub-tit">扫描小程序码</span>
+            <span class="sub-tit">无须下载，直接使用</span>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-normal"><a href="//m.chunyuyisheng.com/index_sino.html" target="_blank">触屏版</a></li>
+      <li class="menu-item menu-normal last"><a href="/clinic/register/index_sino.html"  target="_blank">医生入口</a></li>
+    </ul>
+  </div>
+</div>
+ 
+
+	 <div class="header-bd ui-grid clearfix">
+	<h1 class="logo">
+		<a href="/index_sino.html"><img src="//static.chunyuyisheng.com/@/static/pc/img/seo/logo@2x_8afa1b3.png" alt="春雨医生"></a>
+	</h1>
+	<div class="search-container">
+		<form action="/pc/search" autocomplete="off">
+			<input class="query" type="text" id="query" name="query" placeholder="搜医生、医院、疾病、症状、资讯" value="">
+			<button class="search-btn" type="submit"></button>
+		</form>
+	</div>
+	<div class="user-contanier ">
+	
+		<a class="login－wrap user-item" href="/ssl/api/weblogin/?next=/pc/diseasesdoc/bi/index_sino.html">
+			<i class="icon-login"></i>
+			<span>登录</span>
+		</a>
+		<a class="register-wrap user-item" href="/register?next=/pc/diseasesdoc/bi/index_sino.html">
+			<i class="icon-register"></i>
+			<span>注册</span>
+		</a>
+	
+	</div>
+</div>
+ 
+
+	 <div class="nav-list">
+	<ul class="ui-grid">
+		<li class="nav-item">
+			<a href="/index_sino.html">首页</a>
+		</li>
+		<li class="nav-item cur">
+			<a href="/pc/diseasesdoc/index_sino.html">按疾病找医生</a>
+		</li>
+		<li class="nav-item">
+			<a href="/pc/hospitals/index_sino.html">按医院找医生</a>
+		</li>
+		<li class="nav-item">
+			<a href="/pc/doctors/index_sino.html">按科室找医生</a>
+		</li>
+		<li class="nav-item nav-hot-qa ">
+			<a href="/pc/qalist/index_sino.html">经典问答</a>
+		</li>
+		<li class="nav-item">
+			<a href="/pc/health_news/index_sino.html">健康资讯</a>
+		</li>
+		<li class="nav-item last">
+			<a href="/pc/disease/hot/index_sino.html">疾病知识库</a>
+		</li>
+	</ul>
+</div> 
+
+	
+<div class="ui-grid ui-main">
+    <h3>按疾病找医生</h3>
+    <ul class="list clinic">
+        
+            <li>
+                <a href="/pc/diseasesdoc/1/index_sino.html" data-id="1" >妇科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/fa/index_sino.html" data-id="2" >儿科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/aa/index_sino.html" data-id="3" >内科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ha/index_sino.html" data-id="4" >皮肤性病科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/6/index_sino.html" data-id="6" >营养科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ca/index_sino.html" data-id="7" >骨伤科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/8/index_sino.html" data-id="8" >男科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ba/index_sino.html" data-id="9"  class="cur" >外科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ma/index_sino.html" data-id="11" >肿瘤及防治科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/oa/index_sino.html" data-id="12" >中医科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/13/index_sino.html" data-id="13" >口腔颌面科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ja/index_sino.html" data-id="14" >耳鼻咽喉科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/15/index_sino.html" data-id="15" >眼科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/16/index_sino.html" data-id="16" >整形美容科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/na/index_sino.html" data-id="17" >精神心理科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/21/index_sino.html" data-id="21" >产科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/qa/index_sino.html" data-id="22" >报告解读科</a>
+            </li>
+        
+    </ul>
+    <ul class="list clinic_second">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                    <li><a  data-id="ba" href="/pc/diseasesdoc/ba/index_sino.html">胸外科</a></li>
+                
+                    <li><a  data-id="bb" href="/pc/diseasesdoc/bb/index_sino.html">心脏与血管外科</a></li>
+                
+                    <li><a  data-id="bc" href="/pc/diseasesdoc/bc/index_sino.html">神经外科</a></li>
+                
+                    <li><a  data-id="bd" href="/pc/diseasesdoc/bd/index_sino.html">肝胆外科</a></li>
+                
+                    <li><a  data-id="be" href="/pc/diseasesdoc/be/index_sino.html">烧伤科</a></li>
+                
+                    <li><a  data-id="bf" href="/pc/diseasesdoc/bf/index_sino.html">康复科</a></li>
+                
+                    <li><a  data-id="bg" href="/pc/diseasesdoc/bg/index_sino.html">泌尿外科</a></li>
+                
+                    <li><a  data-id="bh" href="/pc/diseasesdoc/bh/index_sino.html">肛肠科</a></li>
+                
+                    <li><a class="cur" data-id="bi" href="/pc/diseasesdoc/bi/index_sino.html">普外科</a></li>
+                
+                    <li><a  data-id="bj" href="/pc/diseasesdoc/bj/index_sino.html">甲状腺乳腺外科</a></li>
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+    <ul class="list disease">
+        
+            <li><a href="/pc/disease/217268/index_sino.html" title="乳腺增生">乳腺增生</a></li>
+        
+            <li><a href="/pc/disease/255317/index_sino.html" title="肠炎">肠炎</a></li>
+        
+            <li><a href="/pc/disease/263327/index_sino.html" title="血管瘤">血管瘤</a></li>
+        
+            <li><a href="/pc/disease/266621/index_sino.html" title="阑尾炎">阑尾炎</a></li>
+        
+            <li><a href="/pc/disease/273308/index_sino.html" title="胃溃疡">胃溃疡</a></li>
+        
+            <li><a href="/pc/disease/217346/index_sino.html" title="乳腺炎">乳腺炎</a></li>
+        
+            <li><a href="/pc/disease/273314/index_sino.html" title="胃癌">胃癌</a></li>
+        
+            <li><a href="/pc/disease/270989/index_sino.html" title="鸡眼">鸡眼</a></li>
+        
+            <li><a href="/pc/disease/246098/index_sino.html" title="疝气">疝气</a></li>
+        
+            <li><a href="/pc/disease/258944/index_sino.html" title="脂肪瘤">脂肪瘤</a></li>
+        
+            <li><a href="/pc/disease/233471/index_sino.html" title="尿毒症">尿毒症</a></li>
+        
+            <li><a href="/pc/disease/250853/index_sino.html" title="纤维瘤">纤维瘤</a></li>
+        
+            <li><a href="/pc/disease/255290/index_sino.html" title="肠梗阻">肠梗阻</a></li>
+        
+            <li><a href="/pc/disease/243404/index_sino.html" title="淋巴瘤">淋巴瘤</a></li>
+        
+            <li><a href="/pc/disease/273239/index_sino.html" title="直肠癌">直肠癌</a></li>
+        
+            <li><a href="/pc/disease/245537/index_sino.html" title="甲沟炎">甲沟炎</a></li>
+        
+            <li><a href="/pc/disease/271607/index_sino.html" title="鼻息肉">鼻息肉</a></li>
+        
+            <li><a href="/pc/disease/251399/index_sino.html" title="结肠炎">结肠炎</a></li>
+        
+            <li><a href="/pc/disease/236690/index_sino.html" title="急性胃肠炎">急性胃肠炎</a></li>
+        
+            <li><a href="/pc/disease/258509/index_sino.html" title="胰腺炎">胰腺炎</a></li>
+        
+            <li><a href="/pc/disease/264551/index_sino.html" title="软组织损伤">软组织损伤</a></li>
+        
+            <li><a href="/pc/disease/247586/index_sino.html" title="皮脂腺囊肿">皮脂腺囊肿</a></li>
+        
+            <li><a href="/pc/disease/229409/index_sino.html" title="子宫脱垂">子宫脱垂</a></li>
+        
+            <li><a href="/pc/disease/222398/index_sino.html" title="十二指肠溃疡">十二指肠溃疡</a></li>
+        
+            <li><a href="/pc/disease/229736/index_sino.html" title="宫腔粘连">宫腔粘连</a></li>
+        
+            <li><a href="/pc/disease/257846/index_sino.html" title="胆囊结石">胆囊结石</a></li>
+        
+            <li><a href="/pc/disease/260579/index_sino.html" title="腱鞘炎">腱鞘炎</a></li>
+        
+            <li><a href="/pc/disease/267560/index_sino.html" title="霉菌感染">霉菌感染</a></li>
+        
+            <li><a href="/pc/disease/251405/index_sino.html" title="结肠癌">结肠癌</a></li>
+        
+            <li><a href="/pc/disease/229772/index_sino.html" title="宫颈息肉">宫颈息肉</a></li>
+        
+            <li><a href="/pc/disease/243482/index_sino.html" title="淋巴结炎">淋巴结炎</a></li>
+        
+            <li><a href="/pc/disease/259469/index_sino.html" title="脐疝">脐疝</a></li>
+        
+            <li><a href="/pc/disease/243236/index_sino.html" title="消化性溃疡">消化性溃疡</a></li>
+        
+            <li><a href="/pc/disease/234632/index_sino.html" title="开放性骨折">开放性骨折</a></li>
+        
+            <li><a href="/pc/disease/217349/index_sino.html" title="乳腺疾病">乳腺疾病</a></li>
+        
+            <li><a href="/pc/disease/268331/index_sino.html" title="鞘膜积液">鞘膜积液</a></li>
+        
+            <li><a href="/pc/disease/257405/index_sino.html" title="胃出血">胃出血</a></li>
+        
+            <li><a href="/pc/disease/255257/index_sino.html" title="肠套叠">肠套叠</a></li>
+        
+            <li><a href="/pc/disease/245705/index_sino.html" title="甲状腺癌">甲状腺癌</a></li>
+        
+            <li><a href="/pc/disease/255350/index_sino.html" title="肠癌">肠癌</a></li>
+        
+            <li><a href="/pc/disease/260567/index_sino.html" title="腱鞘囊肿">腱鞘囊肿</a></li>
+        
+            <li><a href="/pc/disease/235913/index_sino.html" title="急性乳腺炎">急性乳腺炎</a></li>
+        
+            <li><a href="/pc/disease/257687/index_sino.html" title="胃肠道功能紊乱">胃肠道功能紊乱</a></li>
+        
+            <li><a href="/pc/disease/263297/index_sino.html" title="血管炎">血管炎</a></li>
+        
+            <li><a href="/pc/disease/215801/index_sino.html" title="上消化道出血">上消化道出血</a></li>
+        
+            <li><a href="/pc/disease/257393/index_sino.html" title="胃下垂">胃下垂</a></li>
+        
+            <li><a href="/pc/disease/246086/index_sino.html" title="疖">疖</a></li>
+        
+            <li><a href="/pc/disease/273215/index_sino.html" title="甲状腺炎">甲状腺炎</a></li>
+        
+            <li><a href="/pc/disease/255401/index_sino.html" title="肠系膜淋巴结炎">肠系膜淋巴结炎</a></li>
+        
+            <li><a href="/pc/disease/236705/index_sino.html" title="急性胰腺炎">急性胰腺炎</a></li>
+        
+            <li><a href="/pc/disease/255365/index_sino.html" title="肠粘连">肠粘连</a></li>
+        
+            <li><a href="/pc/disease/238154/index_sino.html" title="慢性阑尾炎">慢性阑尾炎</a></li>
+        
+            <li><a href="/pc/disease/273134/index_sino.html" title="大肠癌">大肠癌</a></li>
+        
+            <li><a href="/pc/disease/236972/index_sino.html" title="急腹症">急腹症</a></li>
+        
+            <li><a href="/pc/disease/216023/index_sino.html" title="下肢静脉曲张">下肢静脉曲张</a></li>
+        
+            <li><a href="/pc/disease/217301/index_sino.html" title="乳腺小叶增生">乳腺小叶增生</a></li>
+        
+            <li><a href="/pc/disease/223154/index_sino.html" title="厌氧菌感染">厌氧菌感染</a></li>
+        
+            <li><a href="/pc/disease/268673/index_sino.html" title="颅骨骨折">颅骨骨折</a></li>
+        
+            <li><a href="/pc/disease/236867/index_sino.html" title="急性阑尾炎">急性阑尾炎</a></li>
+        
+            <li><a href="/pc/disease/229247/index_sino.html" title="子宫下垂">子宫下垂</a></li>
+        
+            <li><a href="/pc/disease/236456/index_sino.html" title="急性盆腔炎">急性盆腔炎</a></li>
+        
+            <li><a href="/pc/disease/257771/index_sino.html" title="胃食管反流病">胃食管反流病</a></li>
+        
+            <li><a href="/pc/disease/217409/index_sino.html" title="乳腺结节">乳腺结节</a></li>
+        
+            <li><a href="/pc/disease/260702/index_sino.html" title="腹股沟疝">腹股沟疝</a></li>
+        
+            <li><a href="/pc/disease/237521/index_sino.html" title="感染性腹泻">感染性腹泻</a></li>
+        
+            <li><a href="/pc/disease/246440/index_sino.html" title="痈">痈</a></li>
+        
+            <li><a href="/pc/disease/259466/index_sino.html" title="脐炎">脐炎</a></li>
+        
+            <li><a href="/pc/disease/255263/index_sino.html" title="肠息肉">肠息肉</a></li>
+        
+            <li><a href="/pc/disease/217265/index_sino.html" title="乳腺囊肿">乳腺囊肿</a></li>
+        
+            <li><a href="/pc/disease/251342/index_sino.html" title="结直肠癌">结直肠癌</a></li>
+        
+            <li><a href="/pc/disease/250589/index_sino.html" title="糖尿病足">糖尿病足</a></li>
+        
+            <li><a href="/pc/disease/221318/index_sino.html" title="出血性疾病">出血性疾病</a></li>
+        
+            <li><a href="/pc/disease/217403/index_sino.html" title="乳腺纤维腺瘤">乳腺纤维腺瘤</a></li>
+        
+            <li><a href="/pc/disease/259013/index_sino.html" title="脉管炎">脉管炎</a></li>
+        
+            <li><a href="/pc/disease/257606/index_sino.html" title="胃穿孔">胃穿孔</a></li>
+        
+            <li><a href="/pc/disease/219797/index_sino.html" title="先天性巨结肠">先天性巨结肠</a></li>
+        
+            <li><a href="/pc/disease/248771/index_sino.html" title="睾丸扭转">睾丸扭转</a></li>
+        
+            <li><a href="/pc/disease/225284/index_sino.html" title="哺乳期乳腺炎">哺乳期乳腺炎</a></li>
+        
+            <li><a href="/pc/disease/243479/index_sino.html" title="淋巴结核">淋巴结核</a></li>
+        
+            <li><a href="/pc/disease/245732/index_sino.html" title="甲状腺肿瘤">甲状腺肿瘤</a></li>
+        
+            <li><a href="/pc/disease/257495/index_sino.html" title="胃息肉">胃息肉</a></li>
+        
+            <li><a href="/pc/disease/257684/index_sino.html" title="胃肠道出血">胃肠道出血</a></li>
+        
+            <li><a href="/pc/disease/249419/index_sino.html" title="神经纤维瘤">神经纤维瘤</a></li>
+        
+            <li><a href="/pc/disease/264116/index_sino.html" title="贲门癌">贲门癌</a></li>
+        
+            <li><a href="/pc/disease/221066/index_sino.html" title="内脏损伤">内脏损伤</a></li>
+        
+            <li><a href="/pc/disease/242072/index_sino.html" title="毛细血管瘤">毛细血管瘤</a></li>
+        
+            <li><a href="/pc/disease/251966/index_sino.html" title="缺血性坏死">缺血性坏死</a></li>
+        
+            <li><a href="/pc/disease/251378/index_sino.html" title="结肠息肉">结肠息肉</a></li>
+        
+            <li><a href="/pc/disease/234485/index_sino.html" title="幽门梗阻">幽门梗阻</a></li>
+        
+            <li><a href="/pc/disease/245357/index_sino.html" title="生殖道感染">生殖道感染</a></li>
+        
+            <li><a href="/pc/disease/257903/index_sino.html" title="胆总管结石">胆总管结石</a></li>
+        
+            <li><a href="/pc/disease/246173/index_sino.html" title="疮疡">疮疡</a></li>
+        
+            <li><a href="/pc/disease/241352/index_sino.html" title="桡骨骨折">桡骨骨折</a></li>
+        
+            <li><a href="/pc/disease/260753/index_sino.html" title="腹腔感染">腹腔感染</a></li>
+        
+            <li><a href="/pc/disease/227990/index_sino.html" title="失血性休克">失血性休克</a></li>
+        
+            <li><a href="/pc/disease/258512/index_sino.html" title="胰腺疾病">胰腺疾病</a></li>
+        
+            <li><a href="/pc/disease/260690/index_sino.html" title="腹股沟斜疝">腹股沟斜疝</a></li>
+        
+            <li><a href="/pc/disease/235832/index_sino.html" title="念珠菌病">念珠菌病</a></li>
+        
+            <li><a href="/pc/disease/239633/index_sino.html" title="斜疝">斜疝</a></li>
+        
+            <li><a href="/pc/disease/257438/index_sino.html" title="胃十二指肠溃疡">胃十二指肠溃疡</a></li>
+        
+            <li><a href="/pc/disease/260144/index_sino.html" title="脾功能亢进">脾功能亢进</a></li>
+        
+            <li><a href="/pc/disease/262538/index_sino.html" title="葡萄球菌感染">葡萄球菌感染</a></li>
+        
+            <li><a href="/pc/disease/243431/index_sino.html" title="淋巴管炎">淋巴管炎</a></li>
+        
+            <li><a href="/pc/disease/256979/index_sino.html" title="肾损伤">肾损伤</a></li>
+        
+            <li><a href="/pc/disease/216029/index_sino.html" title="下肢静脉血栓">下肢静脉血栓</a></li>
+        
+            <li><a href="/pc/disease/251354/index_sino.html" title="结石病">结石病</a></li>
+        
+            <li><a href="/pc/disease/251513/index_sino.html" title="结节性甲状腺肿">结节性甲状腺肿</a></li>
+        
+            <li><a href="/pc/disease/242117/index_sino.html" title="气性坏疽">气性坏疽</a></li>
+        
+            <li><a href="/pc/disease/245660/index_sino.html" title="甲状腺囊肿">甲状腺囊肿</a></li>
+        
+            <li><a href="/pc/disease/266465/index_sino.html" title="门静脉高压">门静脉高压</a></li>
+        
+            <li><a href="/pc/disease/245579/index_sino.html" title="甲状腺乳头状癌">甲状腺乳头状癌</a></li>
+        
+            <li><a href="/pc/disease/260588/index_sino.html" title="腹主动脉瘤">腹主动脉瘤</a></li>
+        
+            <li><a href="/pc/disease/255251/index_sino.html" title="肠坏死">肠坏死</a></li>
+        
+            <li><a href="/pc/disease/227894/index_sino.html" title="大隐静脉曲张">大隐静脉曲张</a></li>
+        
+            <li><a href="/pc/disease/215966/index_sino.html" title="下消化道出血">下消化道出血</a></li>
+        
+            <li><a href="/pc/disease/224735/index_sino.html" title="周围神经损伤">周围神经损伤</a></li>
+        
+            <li><a href="/pc/disease/247190/index_sino.html" title="皮下脂肪瘤">皮下脂肪瘤</a></li>
+        
+            <li><a href="/pc/disease/245612/index_sino.html" title="甲状腺功能亢进症">甲状腺功能亢进症</a></li>
+        
+            <li><a href="/pc/disease/255527/index_sino.html" title="肠道肿瘤">肠道肿瘤</a></li>
+        
+            <li><a href="/pc/disease/241556/index_sino.html" title="植物人">植物人</a></li>
+        
+            <li><a href="/pc/disease/255347/index_sino.html" title="肠瘘">肠瘘</a></li>
+        
+            <li><a href="/pc/disease/257930/index_sino.html" title="胆汁返流性胃炎">胆汁返流性胃炎</a></li>
+        
+            <li><a href="/pc/disease/234488/index_sino.html" title="幽门狭窄">幽门狭窄</a></li>
+        
+            <li><a href="/pc/disease/243437/index_sino.html" title="淋巴管瘤">淋巴管瘤</a></li>
+        
+            <li><a href="/pc/disease/237785/index_sino.html" title="慢性淋巴结炎">慢性淋巴结炎</a></li>
+        
+            <li><a href="/pc/disease/225899/index_sino.html" title="囊腺瘤">囊腺瘤</a></li>
+        
+            <li><a href="/pc/disease/255575/index_sino.html" title="肠麻痹">肠麻痹</a></li>
+        
+            <li><a href="/pc/disease/245738/index_sino.html" title="甲状腺腺瘤">甲状腺腺瘤</a></li>
+        
+            <li><a href="/pc/disease/217082/index_sino.html" title="乳房纤维瘤">乳房纤维瘤</a></li>
+        
+            <li><a href="/pc/disease/256205/index_sino.html" title="肺损伤">肺损伤</a></li>
+        
+            <li><a href="/pc/disease/265958/index_sino.html" title="重症胰腺炎">重症胰腺炎</a></li>
+        
+            <li><a href="/pc/disease/243272/index_sino.html" title="消化道畸形">消化道畸形</a></li>
+        
+            <li><a href="/pc/disease/251306/index_sino.html" title="结核性腹膜炎">结核性腹膜炎</a></li>
+        
+            <li><a href="/pc/disease/260186/index_sino.html" title="脾破裂">脾破裂</a></li>
+        
+            <li><a href="/pc/disease/255272/index_sino.html" title="肠扭转">肠扭转</a></li>
+        
+            <li><a href="/pc/disease/228023/index_sino.html" title="头外伤">头外伤</a></li>
+        
+            <li><a href="/pc/disease/255239/index_sino.html" title="肠出血">肠出血</a></li>
+        
+            <li><a href="/pc/disease/221423/index_sino.html" title="切口疝">切口疝</a></li>
+        
+            <li><a href="/pc/disease/243122/index_sino.html" title="浆细胞性乳腺炎">浆细胞性乳腺炎</a></li>
+        
+            <li><a href="/pc/disease/271070/index_sino.html" title="麻痹性肠梗阻">麻痹性肠梗阻</a></li>
+        
+            <li><a href="/pc/disease/247220/index_sino.html" title="皮样囊肿">皮样囊肿</a></li>
+        
+            <li><a href="/pc/disease/250118/index_sino.html" title="粘连性肠梗阻">粘连性肠梗阻</a></li>
+        
+            <li><a href="/pc/disease/215987/index_sino.html" title="下肢动脉硬化闭塞症">下肢动脉硬化闭塞症</a></li>
+        
+            <li><a href="/pc/disease/257504/index_sino.html" title="胃扭转">胃扭转</a></li>
+        
+            <li><a href="/pc/disease/260627/index_sino.html" title="腹壁疝">腹壁疝</a></li>
+        
+            <li><a href="/pc/disease/247760/index_sino.html" title="盲肠炎">盲肠炎</a></li>
+        
+            <li><a href="/pc/disease/257531/index_sino.html" title="胃泌素瘤">胃泌素瘤</a></li>
+        
+            <li><a href="/pc/disease/261110/index_sino.html" title="膈疝">膈疝</a></li>
+        
+            <li><a href="/pc/disease/257555/index_sino.html" title="胃潴留">胃潴留</a></li>
+        
+            <li><a href="/pc/disease/271481/index_sino.html" title="鼻中隔穿孔">鼻中隔穿孔</a></li>
+        
+            <li><a href="/pc/disease/222269/index_sino.html" title="化脓性肉芽肿">化脓性肉芽肿</a></li>
+        
+            <li><a href="/pc/disease/257720/index_sino.html" title="胃肿瘤">胃肿瘤</a></li>
+        
+            <li><a href="/pc/disease/247838/index_sino.html" title="直肠损伤">直肠损伤</a></li>
+        
+            <li><a href="/pc/disease/260792/index_sino.html" title="腹膜后肿瘤">腹膜后肿瘤</a></li>
+        
+            <li><a href="/pc/disease/255605/index_sino.html" title="股疝">股疝</a></li>
+        
+            <li><a href="/pc/disease/222392/index_sino.html" title="十二指肠梗阻">十二指肠梗阻</a></li>
+        
+            <li><a href="/pc/disease/247706/index_sino.html" title="盆腔腹膜炎">盆腔腹膜炎</a></li>
+        
+            <li><a href="/pc/disease/226145/index_sino.html" title="坏死性筋膜炎">坏死性筋膜炎</a></li>
+        
+            <li><a href="/pc/disease/271358/index_sino.html" title="黑热病">黑热病</a></li>
+        
+            <li><a href="/pc/disease/258959/index_sino.html" title="脂膜炎">脂膜炎</a></li>
+        
+            <li><a href="/pc/disease/233390/index_sino.html" title="尺神经损伤">尺神经损伤</a></li>
+        
+            <li><a href="/pc/disease/230186/index_sino.html" title="导管内乳头状瘤">导管内乳头状瘤</a></li>
+        
+            <li><a href="/pc/disease/264557/index_sino.html" title="软组织肉瘤">软组织肉瘤</a></li>
+        
+            <li><a href="/pc/disease/237590/index_sino.html" title="慢性乳腺炎">慢性乳腺炎</a></li>
+        
+            <li><a href="/pc/disease/257486/index_sino.html" title="胃底静脉曲张">胃底静脉曲张</a></li>
+        
+            <li><a href="/pc/disease/224687/index_sino.html" title="吻合口瘘">吻合口瘘</a></li>
+        
+            <li><a href="/pc/disease/236387/index_sino.html" title="急性淋巴结炎">急性淋巴结炎</a></li>
+        
+            <li><a href="/pc/disease/233237/index_sino.html" title="小腿静脉曲张">小腿静脉曲张</a></li>
+        
+            <li><a href="/pc/disease/260645/index_sino.html" title="腹外疝">腹外疝</a></li>
+        
+            <li><a href="/pc/disease/241709/index_sino.html" title="横纹肌肉瘤">横纹肌肉瘤</a></li>
+        
+            <li><a href="/pc/disease/240974/index_sino.html" title="机械性肠梗阻">机械性肠梗阻</a></li>
+        
+            <li><a href="/pc/disease/236570/index_sino.html" title="急性肠梗阻">急性肠梗阻</a></li>
+        
+            <li><a href="/pc/disease/269735/index_sino.html" title="食管穿孔">食管穿孔</a></li>
+        
+            <li><a href="/pc/disease/251621/index_sino.html" title="绞窄性肠梗阻">绞窄性肠梗阻</a></li>
+        
+            <li><a href="/pc/disease/246122/index_sino.html" title="疣状胃炎">疣状胃炎</a></li>
+        
+            <li><a href="/pc/disease/236762/index_sino.html" title="急性腹膜炎">急性腹膜炎</a></li>
+        
+            <li><a href="/pc/disease/226523/index_sino.html" title="复发性溃疡">复发性溃疡</a></li>
+        
+            <li><a href="/pc/disease/257744/index_sino.html" title="胃轻瘫">胃轻瘫</a></li>
+        
+            <li><a href="/pc/disease/218843/index_sino.html" title="假性动脉瘤">假性动脉瘤</a></li>
+        
+            <li><a href="/pc/disease/255554/index_sino.html" title="肠闭锁">肠闭锁</a></li>
+        
+            <li><a href="/pc/disease/259553/index_sino.html" title="脑动静脉畸形">脑动静脉畸形</a></li>
+        
+            <li><a href="/pc/disease/269657/index_sino.html" title="食管异物">食管异物</a></li>
+        
+    </ul>
+</div>
+
+
+	 
+<div class="ly-ft footer" id="footer">
+    <div class="inner">
+        <div class="ly-lst-contacts">
+            <a class="ly-contacts" target="_blank" href="/cooperation/vue_open_platform/index_sino.html">企业版</a>
+            <a class="ly-contacts" target="_blank" href="/cooperation/open_api/index_sino.html">开放平台</a>
+            <a class="ly-contacts" target="_blank" href="/about_us/index_sino.html">关于春雨</a>
+            <a class="ly-contacts" target="_blank" href="/api/news/chunyu/list/index_sino.html">公司动态</a>
+            <a class="ly-contacts" target="_blank" href="/recruitment/position_list/index_sino.html">加入春雨</a>
+            <a class="ly-contacts" target="_blank" href="/contact.html">联系我们</a>
+            <a class="ly-contacts" target="_blank" href="/pedometer.html">春雨计步器</a>
+        </div>
+        <div class="ly-copyright">
+                <p>
+                    Copyright &copy; 2011-2018
+                    <a href="//www.chunyuyisheng.com/index_sino.html">北京春雨天下软件有限公司</a>
+                    All Rights Reserved
+                </p>
+            <p>京ICP证120150号&nbsp; 京ICP备12050281号-1&nbsp; 京卫网审[2014]第0335号</p>
+        </div>
+        <div class="footer-copyright">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020212">
+                <img src="//static.chunyuyisheng.com/@/media/images/2016/03/10/bede9876c388_w20_h20_.png"/>
+                <p>京公网安备 11010802020212号</p>
+            </a>
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<script type="text/javascript" src="//static.chunyuyisheng.com/@/static/pc/pkg/common/common_pkg_6c99336.js"></script>
+<script type="text/javascript">/*resourcemap*/
+</script>
+
+
+<!--[if lte IE 8]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+<![endif]-->
+
+
+
+<script type="text/javascript">
+    var clinic_list =[{"second_class_clinics": [{"clinic_no": "1", "clinic_name": "\u5987\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "1", "clinic_name": "\u5987\u79d1", "rank": 1, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/ae780009e8c4.png"}, {"second_class_clinics": [{"clinic_no": "fa", "clinic_name": "\u5c0f\u513f\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "fb", "clinic_name": "\u65b0\u751f\u513f\u79d1", "rank": 2, "clinic_icon": ""}], "clinic_no": "2", "clinic_name": "\u513f\u79d1", "rank": 3, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/5759b3afab48.png"}, {"second_class_clinics": [{"clinic_no": "aa", "clinic_name": "\u547c\u5438\u5185\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "ab", "clinic_name": "\u5fc3\u8840\u7ba1\u5185\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "ac", "clinic_name": "\u795e\u7ecf\u5185\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "ad", "clinic_name": "\u6d88\u5316\u5185\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "ae", "clinic_name": "\u80be\u5185\u79d1", "rank": 5, "clinic_icon": ""}, {"clinic_no": "af", "clinic_name": "\u5185\u5206\u6ccc\u4e0e\u4ee3\u8c22\u79d1", "rank": 6, "clinic_icon": ""}, {"clinic_no": "ag", "clinic_name": "\u98ce\u6e7f\u514d\u75ab\u79d1", "rank": 7, "clinic_icon": ""}, {"clinic_no": "ah", "clinic_name": "\u8840\u6db2\u75c5\u79d1", "rank": 8, "clinic_icon": ""}, {"clinic_no": "ai", "clinic_name": "\u611f\u67d3\u79d1", "rank": 9, "clinic_icon": ""}], "clinic_no": "3", "clinic_name": "\u5185\u79d1", "rank": 6, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/290b85687202.png"}, {"second_class_clinics": [{"clinic_no": "ha", "clinic_name": "\u76ae\u80a4\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "hb", "clinic_name": "\u6027\u75c5\u79d1", "rank": 2, "clinic_icon": ""}], "clinic_no": "4", "clinic_name": "\u76ae\u80a4\u6027\u75c5\u79d1", "rank": 5, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/52102f435b29.png"}, {"second_class_clinics": [{"clinic_no": "6", "clinic_name": "\u8425\u517b\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "6", "clinic_name": "\u8425\u517b\u79d1", "rank": 16, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/3c9703fe61a3.png"}, {"second_class_clinics": [{"clinic_no": "ca", "clinic_name": "\u810a\u67f1\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "cb", "clinic_name": "\u5173\u8282\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "cc", "clinic_name": "\u521b\u4f24\u79d1", "rank": 3, "clinic_icon": ""}], "clinic_no": "7", "clinic_name": "\u9aa8\u4f24\u79d1", "rank": 8, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/493274576963.png"}, {"second_class_clinics": [{"clinic_no": "8", "clinic_name": "\u7537\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "8", "clinic_name": "\u7537\u79d1", "rank": 4, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/0d4d82a773ac.png"}, {"second_class_clinics": [{"clinic_no": "ba", "clinic_name": "\u80f8\u5916\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "bb", "clinic_name": "\u5fc3\u810f\u4e0e\u8840\u7ba1\u5916\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "bc", "clinic_name": "\u795e\u7ecf\u5916\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "bd", "clinic_name": "\u809d\u80c6\u5916\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "be", "clinic_name": "\u70e7\u4f24\u79d1", "rank": 5, "clinic_icon": ""}, {"clinic_no": "bf", "clinic_name": "\u5eb7\u590d\u79d1", "rank": 6, "clinic_icon": ""}, {"clinic_no": "bg", "clinic_name": "\u6ccc\u5c3f\u5916\u79d1", "rank": 7, "clinic_icon": ""}, {"clinic_no": "bh", "clinic_name": "\u809b\u80a0\u79d1", "rank": 8, "clinic_icon": ""}, {"clinic_no": "bi", "clinic_name": "\u666e\u5916\u79d1", "rank": 9, "clinic_icon": ""}, {"clinic_no": "bj", "clinic_name": "\u7532\u72b6\u817a\u4e73\u817a\u5916\u79d1", "rank": 10, "clinic_icon": ""}], "clinic_no": "9", "clinic_name": "\u5916\u79d1", "rank": 7, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/f1d0a8c4cdd6.png"}, {"second_class_clinics": [{"clinic_no": "ma", "clinic_name": "\u80bf\u7624\u5185\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "mb", "clinic_name": "\u80bf\u7624\u5916\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "mc", "clinic_name": "\u4ecb\u5165\u4e0e\u653e\u7597\u4e2d\u5fc3", "rank": 3, "clinic_icon": ""}, {"clinic_no": "md", "clinic_name": "\u80bf\u7624\u4e2d\u533b\u79d1", "rank": 4, "clinic_icon": ""}], "clinic_no": "11", "clinic_name": "\u80bf\u7624\u53ca\u9632\u6cbb\u79d1", "rank": 13, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/89e00e66b7e4.png"}, {"second_class_clinics": [{"clinic_no": "oa", "clinic_name": "\u4e2d\u533b\u5185\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "ob", "clinic_name": "\u4e2d\u533b\u5916\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "oc", "clinic_name": "\u4e2d\u533b\u5987\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "od", "clinic_name": "\u4e2d\u533b\u7537\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "oe", "clinic_name": "\u4e2d\u533b\u513f\u79d1", "rank": 5, "clinic_icon": ""}], "clinic_no": "12", "clinic_name": "\u4e2d\u533b\u79d1", "rank": 15, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/58fb0d32bcc7.png"}, {"second_class_clinics": [{"clinic_no": "13", "clinic_name": "\u53e3\u8154\u988c\u9762\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "13", "clinic_name": "\u53e3\u8154\u988c\u9762\u79d1", "rank": 11, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/02/04/d6c6391ad8f5.png"}, {"second_class_clinics": [{"clinic_no": "ja", "clinic_name": "\u8033\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "jb", "clinic_name": "\u9f3b\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "jc", "clinic_name": "\u54bd\u5589\u79d1", "rank": 3, "clinic_icon": ""}], "clinic_no": "14", "clinic_name": "\u8033\u9f3b\u54bd\u5589\u79d1", "rank": 10, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/02/04/8fab8358aae5.png"}, {"second_class_clinics": [{"clinic_no": "15", "clinic_name": "\u773c\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "15", "clinic_name": "\u773c\u79d1", "rank": 9, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/02/04/53ca31d4bfeb.png"}, {"second_class_clinics": [{"clinic_no": "16", "clinic_name": "\u6574\u5f62\u7f8e\u5bb9\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "16", "clinic_name": "\u6574\u5f62\u7f8e\u5bb9\u79d1", "rank": 12, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/03/18/e7542b82f0e4.png"}, {"second_class_clinics": [{"clinic_no": "na", "clinic_name": "\u7cbe\u795e\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "nb", "clinic_name": "\u5fc3\u7406\u79d1", "rank": 2, "clinic_icon": ""}], "clinic_no": "17", "clinic_name": "\u7cbe\u795e\u5fc3\u7406\u79d1", "rank": 14, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/03/18/366b8e4a4921.png"}, {"second_class_clinics": [{"clinic_no": "21", "clinic_name": "\u4ea7\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "21", "clinic_name": "\u4ea7\u79d1", "rank": 2, "clinic_icon": "https://resource.chunyu.mobi/media/images/2014/12/11/c525bda8810e_w60_h60_.png"}, {"second_class_clinics": [{"clinic_no": "qa", "clinic_name": "\u68c0\u9a8c\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "qb", "clinic_name": "\u653e\u5c04\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "qc", "clinic_name": "\u5185\u955c\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "qd", "clinic_name": "\u75c5\u7406\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "qe", "clinic_name": "\u5fc3\u7535\u56fe\u79d1", "rank": 5, "clinic_icon": ""}, {"clinic_no": "qf", "clinic_name": "\u8d85\u58f0\u79d1", "rank": 6, "clinic_icon": ""}, {"clinic_no": "qg", "clinic_name": "\u9ebb\u9189\u79d1", "rank": 7, "clinic_icon": ""}, {"clinic_no": "qh", "clinic_name": "\u4f53\u68c0\u4e2d\u5fc3", "rank": 8, "clinic_icon": ""}, {"clinic_no": "qi", "clinic_name": "\u9884\u9632\u4fdd\u5065\u79d1", "rank": 9, "clinic_icon": ""}], "clinic_no": "22", "clinic_name": "\u62a5\u544a\u89e3\u8bfb\u79d1", "rank": 17, "clinic_icon": "https://resource.chunyu.mobi/media/images/2014/12/11/d207cd285c67_w60_h60_.png"}];
+</script>
+<script type="text/javascript" src="//static.chunyuyisheng.com/@/static/pc/js/seo/search_by_disease_85556de.js"></script>
+
+
+	
+
+
+<script>
+    (function() {
+        var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?c153f37e6f66b16b2d34688c92698e4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+ 
+</body>
+</html>

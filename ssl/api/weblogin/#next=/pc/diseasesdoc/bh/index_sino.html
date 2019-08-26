@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="320" name="MobileOptimized">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="google-site-verification" content="7i-c0s9xRgbjdsdCvAFvceF_a2i3t9cADwvffJxpsek" />
+    <meta name="google-site-verification" content="-SgTPKx44jL73c8svk5CcToj0pZTHYBdHtSp9PLpnQc" /><!--google wm-->
+    
+    
+
+    
+  <meta name="description" content="登录春雨医生桌面版，得到高质量的健康咨询服务。春雨医生是中国最专业的在线医疗健康咨询服务。由三甲医院专家医师解答用户的健康问题。您可通过春雨医生、春雨掌上医生，查询自己或他人有可能罹患的疾病，免费向专业医生提问，得到最专业的解答。" />
+
+
+    
+  <meta name="keywords" content="春雨医生,登录" />
+
+
+    <title>
+        
+  	春雨医生 - 用户登录
+
+    </title>
+    <link rel="shortcut icon" href="https://resource.chunyu.mobi/@/static/favicon.ico"/>
+
+
+    
+        <link rel="stylesheet" href="https://resource.chunyu.mobi/@/static/dist/home/css/download_qr/wap.css" />
+    
+
+    <script>
+    window.__ = window.__||{};
+</script>
+<script>
+    var is_online_webserver = true;
+    is_online_webserver = true;
+</script>
+<script src="https://resource.chunyu.mobi/@/static/libs/jsnlog.js/2.7.1/jsnlog.all.min.js"></script>
+
+    <script type="text/javascript" src="https://resource.chunyu.mobi/@/static/jquery/jquery-1.8.1.min.js"></script>
+
+</head>
+<body>
+    
+    <header>
+    <div id="headerBody">
+        <div id="headerBg"></div>
+        
+        <a id="arrows" onclick="javascript:history.back();">
+        
+            <img src="https://resource.chunyu.mobi/@/static/images/website/wap/arrows.gif">
+        </a>
+        <h1>登录</h1>
+        <a href="/index_sino.html" id="homeButton">首页</a>
+    </div>
+</header>
+
+    <div id="content">
+        <div id="login" class="padding">
+            
+            <p id="errorInfo" class="resultInfo" style="display:none"></p>
+            <h2 id="loginHint" class="marginT">已有账号，直接登录</h2>
+            <form action="" onsubmit="return usernameVerify(this)" method="post">
+                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='c27ff674fff09bb7cd471a643bf372f4' /></div>
+			    
+                <input type="hidden" name="next" value="/pc/diseasesdoc/bh/" />
+                
+                <input id="userName" class="border marginT loginInput" type="text" name="username" placeholder="手机号" autocomplete="off">
+                <input id="passWord" class="border loginInput" type="password" name="password" placeholder="密码" autocomplete="off">
+                <div id="loginSet" class="marginT">
+                    <span id="saveButton">
+                        <img id="loginOption" src="https://resource.chunyu.mobi/@/static//images/website/wap/autoLogin.gif">
+                    </span>
+                    <p id="autoSave">下次自动登录</p>
+                </div>
+                <input id="loginButton" class="border marginT" type="submit" value="登录">
+            </form>
+            <div id="registerRecompose" class="marginT">
+                <!-- a href="/api/ssl_redirect/&url=/accounts/forget/%3Ffrm%3Dweb&amp;sid=1befb59bcf51a67fef1cf752db2705c2.html" class="left">忘记密码</a -->
+                <a href="/register.html" class="right" >免费注册</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+        <p class="footerAddress clear">&#64;春雨移动健康</p>
+    
+
+    <script src="https://resource.chunyu.mobi/@/static/js/website/wap/statistic.js"></script>
+
+    <script src="https://resource.chunyu.mobi/@/static/js/website/wap/base.js"></script>
+
+    <script>
+        
+    $("#saveButton").click(function(){
+        if($("#loginOption").css("display") == 'none')
+            $("#loginOption").css("display","block");
+        else
+            $("#loginOption").css("display","none");
+    });
+
+    //判断手机输入是否正确
+    function usernameVerify(data){
+        $(".resultInfo").css("display","none");
+        var p = /(^0{0,1}1[3|4|5|6|7|8|9][0-9]{9}$)/;
+        if(p.test(data.username.value)){
+            if(data.password.value.length > 0){
+                addDataTolocalStorege(data);
+                return true;
+            }else{
+                $("#errorInfo").css("display","block").text("密码不能为空");
+                return false;
+            }
+        }else{
+            $("#errorInfo").css("display","block").text("请输入正确的手机号");
+            return false;
+        }
+    }
+
+    //登录时保存账号密码
+    function addDataTolocalStorege(data){
+        if($("#loginOption").css("display") == "block"){
+           localStorage.chunyuUsername = data.username.value;
+           localStorage.chunyuPassword = data.password.value;
+        }else{
+           localStorage.clear();
+        }
+    }
+
+    </script>
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "//hm.baidu.com/hm.js?ceba2d96f67a42891787808b085421df";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</body>
+</html>

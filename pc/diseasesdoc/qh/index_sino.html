@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="description" content="体检中心的疾病列表，用于检索该疾病相关的医生">
+
+    
+	<meta name="keywords" content="体检中心，疾病，按疾病找医生" />
+	
+
+
+    <title>体检中心疾病-春雨医生</title>
+
+    
+    <link rel="shortcut icon" href="https://resource.chunyu.mobi/@/static/favicon.ico"/>
+    
+
+    <!--fis编译该 html 后自动引入的 css 放置位置-->
+        
+
+    
+	    <link rel="stylesheet" href="//static.chunyuyisheng.com/@/static/pc/pkg/seo/layout/base_aio_72e15e5.css" />
+
+    
+    <link rel="stylesheet" href="//static.chunyuyisheng.com/@/static/pc/css/seo/search_by_disease_89443ca.css" />
+
+    
+    <script type="text/javascript" src="//static.chunyuyisheng.com/@/static/pc/js/libs/tingyun_8cfb8ae.js"></script>
+    
+
+    <!--项目公共head js放置区域-->
+</head>
+<body>
+
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="//static.chunyuyisheng.com/@/static/pc/css/seo/ie_pollify_2c51446.css"/>
+	<![endif]-->
+	 <div class="header-top-wrap">
+  <div class="ui-grid header-top">
+    <ul class="quick-menu">
+      <li class="menu-item menu-dropdown">
+        <a href="javascript:void(0)">用户端App</a>
+        <div class="qr-code-wrap">
+          <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/qrcode_2a59fce.png" alt="春雨医生二维码">
+          <div class="content">
+            <span class="tit">春雨医生App</span>
+            <span class="sub-tit">扫描二维码</span>
+            <span class="sub-tit">安装春雨医生App</span>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-dropdown">
+        <a href="javascript:void(0)">医生端App</a>
+        <div class="qr-code-wrap">
+          <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/ysd_fa652b7.png" alt="春雨诊所二维码">
+          <div class="content">
+            <span class="tit">春雨诊所App</span>
+            <span class="sub-tit">扫描二维码</span>
+            <span class="sub-tit">安装春雨诊所App</span>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-dropdown weixin-dropdown">
+        <a href="javascript:void(0)">微信公众号</a>
+        <div class="qr-code-wrap">
+          <div class="qr-item">
+            <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/fwh_d0a0f86.png" alt="微信公众号二维码">
+            <div class="content">
+              <span class="tit">微信公众号</span>
+              <span class="sub-tit">扫描二维码</span>
+              <span class="sub-tit">关注春雨医生公众号</span>
+            </div>
+          </div>
+          <div class="qr-item qr-item-last">
+            <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/xcx_d1dc5fc.png" alt="春雨医生小程序二维码">
+            <div class="content">
+              <span class="tit">小程序 春雨医生+</span>
+              <span class="sub-tit">扫描二维码</span>
+              <span class="sub-tit">无需下载快速问诊</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-dropdown">
+        <a href="javascript:void(0)">企业版</a>
+        <div class="qr-code-wrap">
+          <img src="//static.chunyuyisheng.com/@/static/pc/img/seo/sm_app_b1edec3.png" alt="春雨医生企业版小程序码">
+          <div class="content">
+            <span class="tit">小程序 企业版</span>
+            <span class="sub-tit">扫描小程序码</span>
+            <span class="sub-tit">无须下载，直接使用</span>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item menu-normal"><a href="//m.chunyuyisheng.com/index_sino.html" target="_blank">触屏版</a></li>
+      <li class="menu-item menu-normal last"><a href="/clinic/register/index_sino.html"  target="_blank">医生入口</a></li>
+    </ul>
+  </div>
+</div>
+ 
+
+	 <div class="header-bd ui-grid clearfix">
+	<h1 class="logo">
+		<a href="/index_sino.html"><img src="//static.chunyuyisheng.com/@/static/pc/img/seo/logo@2x_8afa1b3.png" alt="春雨医生"></a>
+	</h1>
+	<div class="search-container">
+		<form action="/pc/search" autocomplete="off">
+			<input class="query" type="text" id="query" name="query" placeholder="搜医生、医院、疾病、症状、资讯" value="">
+			<button class="search-btn" type="submit"></button>
+		</form>
+	</div>
+	<div class="user-contanier ">
+	
+		<a class="login－wrap user-item" href="/ssl/api/weblogin/?next=/pc/diseasesdoc/qh/index_sino.html">
+			<i class="icon-login"></i>
+			<span>登录</span>
+		</a>
+		<a class="register-wrap user-item" href="/register?next=/pc/diseasesdoc/qh/index_sino.html">
+			<i class="icon-register"></i>
+			<span>注册</span>
+		</a>
+	
+	</div>
+</div>
+ 
+
+	 <div class="nav-list">
+	<ul class="ui-grid">
+		<li class="nav-item">
+			<a href="/index_sino.html">首页</a>
+		</li>
+		<li class="nav-item cur">
+			<a href="/pc/diseasesdoc/index_sino.html">按疾病找医生</a>
+		</li>
+		<li class="nav-item">
+			<a href="/pc/hospitals/index_sino.html">按医院找医生</a>
+		</li>
+		<li class="nav-item">
+			<a href="/pc/doctors/index_sino.html">按科室找医生</a>
+		</li>
+		<li class="nav-item nav-hot-qa ">
+			<a href="/pc/qalist/index_sino.html">经典问答</a>
+		</li>
+		<li class="nav-item">
+			<a href="/pc/health_news/index_sino.html">健康资讯</a>
+		</li>
+		<li class="nav-item last">
+			<a href="/pc/disease/hot/index_sino.html">疾病知识库</a>
+		</li>
+	</ul>
+</div> 
+
+	
+<div class="ui-grid ui-main">
+    <h3>按疾病找医生</h3>
+    <ul class="list clinic">
+        
+            <li>
+                <a href="/pc/diseasesdoc/1/index_sino.html" data-id="1" >妇科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/fa/index_sino.html" data-id="2" >儿科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/aa/index_sino.html" data-id="3" >内科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ha/index_sino.html" data-id="4" >皮肤性病科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/6/index_sino.html" data-id="6" >营养科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ca/index_sino.html" data-id="7" >骨伤科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/8/index_sino.html" data-id="8" >男科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ba/index_sino.html" data-id="9" >外科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ma/index_sino.html" data-id="11" >肿瘤及防治科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/oa/index_sino.html" data-id="12" >中医科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/13/index_sino.html" data-id="13" >口腔颌面科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/ja/index_sino.html" data-id="14" >耳鼻咽喉科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/15/index_sino.html" data-id="15" >眼科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/16/index_sino.html" data-id="16" >整形美容科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/na/index_sino.html" data-id="17" >精神心理科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/21/index_sino.html" data-id="21" >产科</a>
+            </li>
+        
+            <li>
+                <a href="/pc/diseasesdoc/qa/index_sino.html" data-id="22"  class="cur" >报告解读科</a>
+            </li>
+        
+    </ul>
+    <ul class="list clinic_second">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                    <li><a  data-id="qa" href="/pc/diseasesdoc/qa/index_sino.html">检验科</a></li>
+                
+                    <li><a  data-id="qb" href="/pc/diseasesdoc/qb/index_sino.html">放射科</a></li>
+                
+                    <li><a  data-id="qc" href="/pc/diseasesdoc/qc/index_sino.html">内镜科</a></li>
+                
+                    <li><a  data-id="qd" href="/pc/diseasesdoc/qd/index_sino.html">病理科</a></li>
+                
+                    <li><a  data-id="qe" href="/pc/diseasesdoc/qe/index_sino.html">心电图科</a></li>
+                
+                    <li><a  data-id="qf" href="/pc/diseasesdoc/qf/index_sino.html">超声科</a></li>
+                
+                    <li><a  data-id="qg" href="/pc/diseasesdoc/qg/index_sino.html">麻醉科</a></li>
+                
+                    <li><a class="cur" data-id="qh" href="/pc/diseasesdoc/qh/index_sino.html">体检中心</a></li>
+                
+                    <li><a  data-id="qi" href="/pc/diseasesdoc/qi/index_sino.html">预防保健科</a></li>
+                
+            
+        
+    </ul>
+    <ul class="list disease">
+        
+            <div class="ui-no-info">暂无相关信息</div>
+        
+    </ul>
+</div>
+
+
+	 
+<div class="ly-ft footer" id="footer">
+    <div class="inner">
+        <div class="ly-lst-contacts">
+            <a class="ly-contacts" target="_blank" href="/cooperation/vue_open_platform/index_sino.html">企业版</a>
+            <a class="ly-contacts" target="_blank" href="/cooperation/open_api/index_sino.html">开放平台</a>
+            <a class="ly-contacts" target="_blank" href="/about_us/index_sino.html">关于春雨</a>
+            <a class="ly-contacts" target="_blank" href="/api/news/chunyu/list/index_sino.html">公司动态</a>
+            <a class="ly-contacts" target="_blank" href="/recruitment/position_list/index_sino.html">加入春雨</a>
+            <a class="ly-contacts" target="_blank" href="/contact.html">联系我们</a>
+            <a class="ly-contacts" target="_blank" href="/pedometer.html">春雨计步器</a>
+        </div>
+        <div class="ly-copyright">
+                <p>
+                    Copyright &copy; 2011-2018
+                    <a href="//www.chunyuyisheng.com/index_sino.html">北京春雨天下软件有限公司</a>
+                    All Rights Reserved
+                </p>
+            <p>京ICP证120150号&nbsp; 京ICP备12050281号-1&nbsp; 京卫网审[2014]第0335号</p>
+        </div>
+        <div class="footer-copyright">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020212">
+                <img src="//static.chunyuyisheng.com/@/media/images/2016/03/10/bede9876c388_w20_h20_.png"/>
+                <p>京公网安备 11010802020212号</p>
+            </a>
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<script type="text/javascript" src="//static.chunyuyisheng.com/@/static/pc/pkg/common/common_pkg_6c99336.js"></script>
+<script type="text/javascript">/*resourcemap*/
+</script>
+
+
+<!--[if lte IE 8]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+<![endif]-->
+
+
+
+<script type="text/javascript">
+    var clinic_list =[{"second_class_clinics": [{"clinic_no": "1", "clinic_name": "\u5987\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "1", "clinic_name": "\u5987\u79d1", "rank": 1, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/ae780009e8c4.png"}, {"second_class_clinics": [{"clinic_no": "fa", "clinic_name": "\u5c0f\u513f\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "fb", "clinic_name": "\u65b0\u751f\u513f\u79d1", "rank": 2, "clinic_icon": ""}], "clinic_no": "2", "clinic_name": "\u513f\u79d1", "rank": 3, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/5759b3afab48.png"}, {"second_class_clinics": [{"clinic_no": "aa", "clinic_name": "\u547c\u5438\u5185\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "ab", "clinic_name": "\u5fc3\u8840\u7ba1\u5185\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "ac", "clinic_name": "\u795e\u7ecf\u5185\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "ad", "clinic_name": "\u6d88\u5316\u5185\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "ae", "clinic_name": "\u80be\u5185\u79d1", "rank": 5, "clinic_icon": ""}, {"clinic_no": "af", "clinic_name": "\u5185\u5206\u6ccc\u4e0e\u4ee3\u8c22\u79d1", "rank": 6, "clinic_icon": ""}, {"clinic_no": "ag", "clinic_name": "\u98ce\u6e7f\u514d\u75ab\u79d1", "rank": 7, "clinic_icon": ""}, {"clinic_no": "ah", "clinic_name": "\u8840\u6db2\u75c5\u79d1", "rank": 8, "clinic_icon": ""}, {"clinic_no": "ai", "clinic_name": "\u611f\u67d3\u79d1", "rank": 9, "clinic_icon": ""}], "clinic_no": "3", "clinic_name": "\u5185\u79d1", "rank": 6, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/290b85687202.png"}, {"second_class_clinics": [{"clinic_no": "ha", "clinic_name": "\u76ae\u80a4\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "hb", "clinic_name": "\u6027\u75c5\u79d1", "rank": 2, "clinic_icon": ""}], "clinic_no": "4", "clinic_name": "\u76ae\u80a4\u6027\u75c5\u79d1", "rank": 5, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/52102f435b29.png"}, {"second_class_clinics": [{"clinic_no": "6", "clinic_name": "\u8425\u517b\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "6", "clinic_name": "\u8425\u517b\u79d1", "rank": 16, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/3c9703fe61a3.png"}, {"second_class_clinics": [{"clinic_no": "ca", "clinic_name": "\u810a\u67f1\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "cb", "clinic_name": "\u5173\u8282\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "cc", "clinic_name": "\u521b\u4f24\u79d1", "rank": 3, "clinic_icon": ""}], "clinic_no": "7", "clinic_name": "\u9aa8\u4f24\u79d1", "rank": 8, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/493274576963.png"}, {"second_class_clinics": [{"clinic_no": "8", "clinic_name": "\u7537\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "8", "clinic_name": "\u7537\u79d1", "rank": 4, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/0d4d82a773ac.png"}, {"second_class_clinics": [{"clinic_no": "ba", "clinic_name": "\u80f8\u5916\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "bb", "clinic_name": "\u5fc3\u810f\u4e0e\u8840\u7ba1\u5916\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "bc", "clinic_name": "\u795e\u7ecf\u5916\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "bd", "clinic_name": "\u809d\u80c6\u5916\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "be", "clinic_name": "\u70e7\u4f24\u79d1", "rank": 5, "clinic_icon": ""}, {"clinic_no": "bf", "clinic_name": "\u5eb7\u590d\u79d1", "rank": 6, "clinic_icon": ""}, {"clinic_no": "bg", "clinic_name": "\u6ccc\u5c3f\u5916\u79d1", "rank": 7, "clinic_icon": ""}, {"clinic_no": "bh", "clinic_name": "\u809b\u80a0\u79d1", "rank": 8, "clinic_icon": ""}, {"clinic_no": "bi", "clinic_name": "\u666e\u5916\u79d1", "rank": 9, "clinic_icon": ""}, {"clinic_no": "bj", "clinic_name": "\u7532\u72b6\u817a\u4e73\u817a\u5916\u79d1", "rank": 10, "clinic_icon": ""}], "clinic_no": "9", "clinic_name": "\u5916\u79d1", "rank": 7, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/f1d0a8c4cdd6.png"}, {"second_class_clinics": [{"clinic_no": "ma", "clinic_name": "\u80bf\u7624\u5185\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "mb", "clinic_name": "\u80bf\u7624\u5916\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "mc", "clinic_name": "\u4ecb\u5165\u4e0e\u653e\u7597\u4e2d\u5fc3", "rank": 3, "clinic_icon": ""}, {"clinic_no": "md", "clinic_name": "\u80bf\u7624\u4e2d\u533b\u79d1", "rank": 4, "clinic_icon": ""}], "clinic_no": "11", "clinic_name": "\u80bf\u7624\u53ca\u9632\u6cbb\u79d1", "rank": 13, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/89e00e66b7e4.png"}, {"second_class_clinics": [{"clinic_no": "oa", "clinic_name": "\u4e2d\u533b\u5185\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "ob", "clinic_name": "\u4e2d\u533b\u5916\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "oc", "clinic_name": "\u4e2d\u533b\u5987\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "od", "clinic_name": "\u4e2d\u533b\u7537\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "oe", "clinic_name": "\u4e2d\u533b\u513f\u79d1", "rank": 5, "clinic_icon": ""}], "clinic_no": "12", "clinic_name": "\u4e2d\u533b\u79d1", "rank": 15, "clinic_icon": "https://resource.chunyu.mobi/media/images/2012/12/11/58fb0d32bcc7.png"}, {"second_class_clinics": [{"clinic_no": "13", "clinic_name": "\u53e3\u8154\u988c\u9762\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "13", "clinic_name": "\u53e3\u8154\u988c\u9762\u79d1", "rank": 11, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/02/04/d6c6391ad8f5.png"}, {"second_class_clinics": [{"clinic_no": "ja", "clinic_name": "\u8033\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "jb", "clinic_name": "\u9f3b\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "jc", "clinic_name": "\u54bd\u5589\u79d1", "rank": 3, "clinic_icon": ""}], "clinic_no": "14", "clinic_name": "\u8033\u9f3b\u54bd\u5589\u79d1", "rank": 10, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/02/04/8fab8358aae5.png"}, {"second_class_clinics": [{"clinic_no": "15", "clinic_name": "\u773c\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "15", "clinic_name": "\u773c\u79d1", "rank": 9, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/02/04/53ca31d4bfeb.png"}, {"second_class_clinics": [{"clinic_no": "16", "clinic_name": "\u6574\u5f62\u7f8e\u5bb9\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "16", "clinic_name": "\u6574\u5f62\u7f8e\u5bb9\u79d1", "rank": 12, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/03/18/e7542b82f0e4.png"}, {"second_class_clinics": [{"clinic_no": "na", "clinic_name": "\u7cbe\u795e\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "nb", "clinic_name": "\u5fc3\u7406\u79d1", "rank": 2, "clinic_icon": ""}], "clinic_no": "17", "clinic_name": "\u7cbe\u795e\u5fc3\u7406\u79d1", "rank": 14, "clinic_icon": "https://resource.chunyu.mobi/media/images/2013/03/18/366b8e4a4921.png"}, {"second_class_clinics": [{"clinic_no": "21", "clinic_name": "\u4ea7\u79d1", "rank": 1, "clinic_icon": ""}], "clinic_no": "21", "clinic_name": "\u4ea7\u79d1", "rank": 2, "clinic_icon": "https://resource.chunyu.mobi/media/images/2014/12/11/c525bda8810e_w60_h60_.png"}, {"second_class_clinics": [{"clinic_no": "qa", "clinic_name": "\u68c0\u9a8c\u79d1", "rank": 1, "clinic_icon": ""}, {"clinic_no": "qb", "clinic_name": "\u653e\u5c04\u79d1", "rank": 2, "clinic_icon": ""}, {"clinic_no": "qc", "clinic_name": "\u5185\u955c\u79d1", "rank": 3, "clinic_icon": ""}, {"clinic_no": "qd", "clinic_name": "\u75c5\u7406\u79d1", "rank": 4, "clinic_icon": ""}, {"clinic_no": "qe", "clinic_name": "\u5fc3\u7535\u56fe\u79d1", "rank": 5, "clinic_icon": ""}, {"clinic_no": "qf", "clinic_name": "\u8d85\u58f0\u79d1", "rank": 6, "clinic_icon": ""}, {"clinic_no": "qg", "clinic_name": "\u9ebb\u9189\u79d1", "rank": 7, "clinic_icon": ""}, {"clinic_no": "qh", "clinic_name": "\u4f53\u68c0\u4e2d\u5fc3", "rank": 8, "clinic_icon": ""}, {"clinic_no": "qi", "clinic_name": "\u9884\u9632\u4fdd\u5065\u79d1", "rank": 9, "clinic_icon": ""}], "clinic_no": "22", "clinic_name": "\u62a5\u544a\u89e3\u8bfb\u79d1", "rank": 17, "clinic_icon": "https://resource.chunyu.mobi/media/images/2014/12/11/d207cd285c67_w60_h60_.png"}];
+</script>
+<script type="text/javascript" src="//static.chunyuyisheng.com/@/static/pc/js/seo/search_by_disease_85556de.js"></script>
+
+
+	
+
+
+<script>
+    (function() {
+        var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?c153f37e6f66b16b2d34688c92698e4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+ 
+</body>
+</html>
